@@ -179,7 +179,7 @@ public class TerminalBridge implements VDUDisplay {
 		// create our default paint
 		defaultPaint = new Paint();
 		defaultPaint.setAntiAlias(true);
-		defaultPaint.setTypeface(Typeface.MONOSPACE);
+		defaultPaint.setTypeface(Typeface.createFromAsset( manager.getAssets() , "fonts/ipag.ttf"));
 		defaultPaint.setFakeBoldText(true); // more readable?
 
 		refreshOverlayFontSize();
